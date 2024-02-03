@@ -122,7 +122,7 @@ module.exports = {
           position: 'before',
         },
         {
-          pattern: '**/*.+(css|sass|less|scss|pcss|style)',
+          pattern: '**/*.+(css|sass|less|scss|pcss|style|svg)',
           patternOptions: { dot: true, nocomment: true },
           group: 'unknown',
           position: 'after',
