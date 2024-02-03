@@ -32,7 +32,7 @@ module.exports = {
   rules: {
     /** prettier 에러 */
     'prettier/prettier': 'error',
-    'react-refresh/only-export-components': 'warn',
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     /** emotion/react 의 css 사용시 에러 무시 */
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
     /** JSX 안에서 HTML 엔티티(escape sequence)를 사용하면 에러 */
@@ -137,6 +137,7 @@ module.exports = {
   },
   overrides: [{
     files: ['**/*.ts', '**/*.tsx'],
+    parser: '@typescript-eslint/parser',
     extends: [
       'plugin:@typescript-eslint/recommended',
     ],
