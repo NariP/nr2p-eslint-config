@@ -118,6 +118,11 @@ module.exports = {
             position: 'before',
           },
           {
+            pattern: '@tanstack/*',
+            group: 'external',
+            position: 'before',
+          },
+          {
             pattern: '{react*,*/react}',
             group: 'external',
             position: 'before',
@@ -160,6 +165,7 @@ module.exports = {
       '@typescript-eslint/ban-ts-comment': 'off',
       /** 빈 함수 사용 금지하는 옵션 */
       '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn'
     },
   }, {
     "files": ["test/**", "**.test.ts", "**.test.tsx"],
