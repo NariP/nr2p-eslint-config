@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  env: {browser: true, es2020: true, jest: true, node: true, "jest/globals": true},
+  env: {browser: true, es2020: true, node: true},
   globals: {window: true},
   extends: [
     'eslint:recommended',
