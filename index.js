@@ -167,10 +167,5 @@ module.exports = {
       '@typescript-eslint/no-empty-function': 'off',
       '@typescript-eslint/no-explicit-any': 'warn'
     },
-  }, {
-    "files": ["test/**", "**.test.ts", "**.test.tsx"],
-    "plugins": ["jest"],
-    "extends": ["plugin:jest/recommended"],
-    "rules": {"jest/prefer-expect-assertions": "off"}
   }]
 };
